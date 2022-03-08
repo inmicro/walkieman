@@ -9,10 +9,10 @@ import PySimpleGUI as sg
 termination_status = False
 def receive_call(ip):
     try:
-        os.remove("output0.wav")
+        os.remove("output.mp3")
     except:
         pass
-    url0 = f'http://{ip}:8000/output0.wav'
+    url0 = f'http://{ip}:8000/output.mp3'
     print(url0)
     while 1:
         try:
